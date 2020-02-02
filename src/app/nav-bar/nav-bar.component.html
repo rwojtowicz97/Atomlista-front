@@ -1,0 +1,29 @@
+<mat-toolbar>
+    <button mat-fab [matMenuTriggerFor]="home"><i class="fas fa-home fa-lg"></i></button>
+</mat-toolbar>
+<mat-menu #home="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="atoms"><i class="fas fa-atom"></i> Atoms</button>
+    <button mat-menu-item [matMenuTriggerFor]="products"><i class="fab fa-product-hunt"></i> Products</button>
+    <button mat-menu-item [matMenuTriggerFor]="teams"><i class="fas fa-users"></i> Teams</button>
+    <button mat-menu-item [matMenuTriggerFor]="workers"><i class="far fa-user"></i> Workers</button>
+</mat-menu>
+
+<mat-menu #atoms="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <button mat-menu-item><i class="fas fa-search"></i> Search</button>
+</mat-menu>
+
+<mat-menu #products="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <button mat-menu-item><i class="fas fa-search"></i> Search</button>
+</mat-menu>
+
+<mat-menu #teams="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <button mat-menu-item><i class="fas fa-search"></i> Search</button>
+</mat-menu>
+
+<mat-menu #workers="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <button mat-menu-item><i class="fas fa-search"></i> Search</button>
+</mat-menu>

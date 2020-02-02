@@ -1,0 +1,41 @@
+<mat-toolbar>
+    <button mat-fab [matMenuTriggerFor]="home"><i class="fas fa-home fa-lg"></i></button>
+</mat-toolbar>
+<mat-menu #home="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="atoms"><i class="fas fa-atom"></i> Atoms</button>
+    <button mat-menu-item [matMenuTriggerFor]="products"><i class="fab fa-product-hunt"></i> Products</button>
+    <button mat-menu-item [matMenuTriggerFor]="teams"><i class="fas fa-users"></i> Teams</button>
+    <button mat-menu-item [matMenuTriggerFor]="workers"><i class="far fa-user"></i> Workers</button>
+     <a mat-menu-item class="nav-item nav-link" routerLink="/" > Back to Home</a>
+</mat-menu>
+
+<mat-menu #atoms="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <a mat-menu-item class="nav-item nav-link" routerLink="/atom-list"><i class="fas fa-search"></i> Search</a>
+</mat-menu>
+
+<mat-menu #products="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <a mat-menu-item class="nav-item nav-link" routerLink="/product-list"><i class="fas fa-search"></i> Search</a>
+</mat-menu>
+
+<mat-menu #teams="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <a mat-menu-item class="nav-item nav-link" routerLink="/team-list"><i class="fas fa-search"></i> Search</a>
+</mat-menu>
+
+<mat-menu #workers="matMenu">
+    <button mat-menu-item><i class="fas fa-plus-circle"></i> Create</button>
+    <a mat-menu-item class="nav-item nav-link" routerLink="/worker-list"><i class="fas fa-search"></i> Search</a>
+</mat-menu>
+
+<!-- main content container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+mat-toolbar {
+    background-color: tan;
+}
+
+.mat-fab {
+    background-color: slategrey;
+}
+
+.mat-fab:hover{
+    background-color: grey;
+}
+
+.jumbotron {
+    background-color: rgba(197, 20, 20, 0.623);
+}
