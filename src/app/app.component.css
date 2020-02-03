@@ -14,3 +14,9 @@ mat-toolbar {
     background-color: whitesmoke;
     height: 100vh;
 }
+
+.title {
+  padding-left: 10px;
+  margin-right: auto;
+  color: whitesmoke;
+}
