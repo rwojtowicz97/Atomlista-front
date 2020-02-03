@@ -1,12 +1,12 @@
 <mat-toolbar>
-    <button mat-fab [matMenuTriggerFor]="home"><i class="fas fa-home fa-lg"></i></button>
+    <button mat-fab [matMenuTriggerFor]="home"><i class="fas fa-bars"></i></button>
 </mat-toolbar>
 <mat-menu #home="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="atoms"><i class="fas fa-atom"></i> Atoms</button>
     <button mat-menu-item [matMenuTriggerFor]="products"><i class="fab fa-product-hunt"></i> Products</button>
     <button mat-menu-item [matMenuTriggerFor]="teams"><i class="fas fa-users"></i> Teams</button>
     <button mat-menu-item [matMenuTriggerFor]="workers"><i class="far fa-user"></i> Workers</button>
-     <a mat-menu-item class="nav-item nav-link" routerLink="/" > Back to Home</a>
+    <a mat-menu-item class="nav-item nav-link" routerLink="/" ><i class="fas fa-home"></i> Back to Home</a>
 </mat-menu>
 
 <mat-menu #atoms="matMenu">

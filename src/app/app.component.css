@@ -1,5 +1,5 @@
 mat-toolbar {
-    background-color: tan;
+    background-color: #8438AD;
 }
 
 .mat-fab {
@@ -11,5 +11,6 @@ mat-toolbar {
 }
 
 .jumbotron {
-    background-color: rgba(197, 20, 20, 0.623);
+    background-color: whitesmoke;
+    height: 100vh;
 }
