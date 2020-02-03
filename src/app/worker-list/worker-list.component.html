@@ -1,1 +1,10 @@
-<p>worker-list works!</p>
+<table class="table table-hover">
+  <tr *ngFor="let worker of service.list">
+  <td (click)="populateForm(worker)">{{worker.Username}}</td>
+  <td (click)="populateForm(worker)">{{worker.Name}}</td>
+  <td (click)="populateForm(worker)">{{worker.Surname}}</td>
+  <td (click)="populateForm(worker)">{{worker.Email}}</td>
+  <td (click)="populateForm(worker)">{{worker.CreatedAt}}</td>
+  <td (click)="onDelete(worker.Id)"><i class="fas fa-trash fa-lg"></i></td>
+  </tr>
+</table>

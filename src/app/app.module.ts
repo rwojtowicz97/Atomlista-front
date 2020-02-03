@@ -4,6 +4,7 @@ import { MatMenuModule}  from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from "@angular/material/button";
+import { ToastrModule } from 'ngx-toastr';
 
 import { appRoutingModule } from "./app.routing";
 import { AppComponent } from './app.component';
@@ -36,7 +37,8 @@ import { WorkerListComponent } from './worker-list/worker-list.component';
     appRoutingModule,
     MatMenuModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
