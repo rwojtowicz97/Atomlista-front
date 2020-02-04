@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from "@angular/material/button";
 import { ToastrModule } from 'ngx-toastr';
+import { Ng2SearchPipeModule } from "ng2-search-filter";
 
 import { appRoutingModule } from "./app.routing";
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { WorkerListComponent } from './worker-list/worker-list.component';
     FormsModule,
     HttpClientModule,
     NgbModule,
+    Ng2SearchPipeModule,
     appRoutingModule,
     MatMenuModule,
     MatToolbarModule,

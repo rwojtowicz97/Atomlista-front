@@ -20,3 +20,6 @@ mat-toolbar {
   margin-right: auto;
   color: whitesmoke;
 }
+.row {
+  justify-content: center;
+}

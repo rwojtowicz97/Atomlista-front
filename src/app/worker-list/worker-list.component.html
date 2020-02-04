@@ -1,5 +1,16 @@
-<table class="table table-hover">
-  <tr *ngFor="let worker of service.list">
+<div class="search-list">
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+  placeholder="Start searching...">
+<table class="table mat-table table-hover">
+  <tr>
+      <th>Login</th>
+      <th>Name</th>
+      <th>Suername</th>
+      <th>Email</th>
+      <th>Create Date</th>
+      <th></th>
+  </tr>
+  <tr *ngFor="let worker of service.list | filter:searchText">
   <td (click)="populateForm(worker)">{{worker.Username}}</td>
   <td (click)="populateForm(worker)">{{worker.Name}}</td>
   <td (click)="populateForm(worker)">{{worker.Surname}}</td>
@@ -8,3 +19,4 @@
   <td (click)="onDelete(worker.Id)"><i class="fas fa-trash fa-lg"></i></td>
   </tr>
 </table>
+</div>
