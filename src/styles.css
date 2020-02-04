@@ -5,7 +5,7 @@
   color: red;
 }
 
-table tr:hover {
+.tr-record:hover {
   cursor: pointer;
   background-color: rgb(135, 133, 145);
 }

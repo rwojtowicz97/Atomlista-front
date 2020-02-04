@@ -10,24 +10,25 @@ import { Ng2SearchPipeModule } from "ng2-search-filter";
 import { appRoutingModule } from "./app.routing";
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from "./homepage/homepage.component";
 import { AtomListComponent } from './atom-list/atom-list.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TeamListComponent } from './team-list/team-list.component';
-import { WorkerListComponent } from './worker-list/worker-list.component';
+import { WorkerListComponent } from './worker-details/worker-list/worker-list.component';
+import { WorkerCreateComponent } from './worker-details/worker-create/worker-create.component';
+import { WorkerService } from './shared/worker-list.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     HomepageComponent,
     AtomListComponent,
     ProductListComponent,
     TeamListComponent,
-    WorkerListComponent
+    WorkerListComponent,
+    WorkerCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,7 @@ import { WorkerListComponent } from './worker-list/worker-list.component';
     MatButtonModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [WorkerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,5 +4,4 @@ export class Worker {
   Name: string;
   Surname: string;
   Email: string;
-  CreatedAt: string;
 }
