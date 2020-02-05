@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-worker-create',
   templateUrl: './worker-create.component.html',
-  styleUrls: ['./worker-create.component.css']
+  styleUrls: []
 })
 export class WorkerCreateComponent implements OnInit {
 
@@ -30,10 +30,11 @@ export class WorkerCreateComponent implements OnInit {
   }
 
   onSubmit(form:NgForm){
-    if(this.service.formData.Id==0)
-      this.insertRecord(form);
-    else
-      this.updateRecord(form);
+    // if(this.service.formData.Id==0)
+    //   this.insertRecord(form);
+    // else
+    //   this.updateRecord(form);
+
   }
 
   insertRecord(form:NgForm){
