@@ -30,11 +30,7 @@ export class WorkerCreateComponent implements OnInit {
   }
 
   onSubmit(form:NgForm){
-    // if(this.service.formData.Id==0)
-    //   this.insertRecord(form);
-    // else
-    //   this.updateRecord(form);
-
+      this.insertRecord(form);
   }
 
   insertRecord(form:NgForm){
@@ -42,17 +38,7 @@ export class WorkerCreateComponent implements OnInit {
       res=>{
         this.resetForm(form);
         this.toastr.success('Submitted successfully', 'Worker added');
-      },
-      err => {
-        console.log(err);
-      }
-    )
-  }
-  updateRecord(form:NgForm){
-    this.service.putWorker().subscribe(
-      res=> {
-        this.resetForm(form);
-        this.toastr.info('Submitted successfully', 'Worker added');
+        this.service.getWorkerList();
       },
       err => {
         console.log(err);
