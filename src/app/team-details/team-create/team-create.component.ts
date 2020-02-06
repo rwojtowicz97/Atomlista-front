@@ -22,7 +22,8 @@ export class TeamCreateComponent implements OnInit {
       form.resetForm();
     this.service.formData = {
       Id: 0,
-      TeamName: ''
+      TeamName: '',
+      PeopleCount: 0
     }
   }
 

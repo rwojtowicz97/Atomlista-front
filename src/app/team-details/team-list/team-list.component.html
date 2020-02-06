@@ -4,12 +4,12 @@
 <table class="table mat-table table-hover">
   <tr>
     <th>Name</th>
-    <th>Number of Members</th>
+    <th>Members</th>
     <th></th>
   </tr>
   <tr class="tr-record" *ngFor="let team of service.list | filter:searchText">
     <td>{{team.TeamName}}</td>
-    <td></td>
+    <td>{{team.PeopleCount}}</td>
     <td (click)="onDelete(team.Id)"><i class="fas fa-trash fa-lg"></i></td>
   </tr>
 </table>
