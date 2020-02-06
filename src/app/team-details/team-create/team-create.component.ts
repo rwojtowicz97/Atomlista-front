@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { WorkerService } from 'src/app/shared/worker-list/worker-list.service';
+import { TeamService } from 'src/app/shared/team-list/team-list.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-worker-create',
-  templateUrl: './worker-create.component.html',
+  selector: 'app-team-create',
+  templateUrl: './team-create.component.html',
   styleUrls: []
 })
-export class WorkerCreateComponent implements OnInit {
+export class TeamCreateComponent implements OnInit {
 
-  constructor(private service:WorkerService,
+  constructor(private service:TeamService,
     private toastr: ToastrService) { }
 
   ngOnInit() {
@@ -22,27 +22,25 @@ export class WorkerCreateComponent implements OnInit {
       form.resetForm();
     this.service.formData = {
       Id: 0,
-      Username: '',
-      Name: '',
-      Surname: '',
-      Email: ''
+      TeamName: ''
     }
   }
 
   onSubmit(form:NgForm){
-      this.insertRecord(form);
+    this.insertRecord(form);
   }
 
   insertRecord(form:NgForm){
-    this.service.postWorker().subscribe(
+    this.service.postTeam().subscribe(
       res=>{
         this.resetForm(form);
-        this.toastr.success('Submitted successfully', 'Worker added');
-        this.service.getWorkerList();
+        this.toastr.success('Submitted successfully', 'Team added');
+        this.service.getTeamList();
       },
-      err => {
+      err=>{
         console.log(err);
       }
     )
   }
+
 }

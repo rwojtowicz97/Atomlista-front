@@ -5,9 +5,8 @@
   <tr>
       <th>Login</th>
       <th>Name</th>
-      <th>Suername</th>
+      <th>Surename</th>
       <th>Email</th>
-      <th>Create Date</th>
       <th></th>
   </tr>
   <tr class="tr-record" *ngFor="let worker of service.list | filter:searchText">
@@ -15,7 +14,6 @@
   <td>{{worker.Name}}</td>
   <td>{{worker.Surname}}</td>
   <td>{{worker.Email}}</td>
-  <td>{{worker.CreatedAt}}</td>
   <td (click)="onDelete(worker.Id)"><i class="fas fa-trash fa-lg"></i></td>
   </tr>
 </table>

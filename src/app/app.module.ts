@@ -15,10 +15,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from "./homepage/homepage.component";
 import { AtomListComponent } from './atom-list/atom-list.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { TeamListComponent } from './team-list/team-list.component';
+import { TeamListComponent } from './team-details/team-list/team-list.component';
 import { WorkerListComponent } from './worker-details/worker-list/worker-list.component';
 import { WorkerCreateComponent } from './worker-details/worker-create/worker-create.component';
-import { WorkerService } from './shared/worker-list.service';
+import { WorkerService } from './shared/worker-list/worker-list.service';
+import { TeamCreateComponent } from './team-details/team-create/team-create.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WorkerService } from './shared/worker-list.service';
     ProductListComponent,
     TeamListComponent,
     WorkerListComponent,
-    WorkerCreateComponent
+    WorkerCreateComponent,
+    TeamCreateComponent
   ],
   imports: [
     BrowserModule,

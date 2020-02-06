@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkerService } from "src/app/shared/worker-list.service";
+import { WorkerService } from "src/app/shared/worker-list/worker-list.service";
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -17,7 +17,7 @@ export class WorkerListComponent implements OnInit {
   }
 
   onDelete(Id){
-    if(confirm('Are you sure to delete this record?'))
+    if(confirm('Are you sure to delete this worker?'))
     this.service.deleteWorker(Id)
     .subscribe(res =>{
       this.service.getWorkerList();
