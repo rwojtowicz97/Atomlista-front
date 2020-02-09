@@ -1,0 +1,22 @@
+<div class="search-list">
+    <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+    placeholder="Start searching...">
+  <table class="table mat-table table-hover mat-elevation-z8">
+    <tr>
+      <th>Name</th>
+      <th>Url</th>
+      <th>Bussiness Owner</th>
+      <th>Tech Owner</th>
+      <th>Product</th>
+      <th></th>
+    </tr>
+    <tr class="tr-record" *ngFor="let atom of service.list | filter:searchText">
+      <td>{{atom.AtomName}}</td>
+      <td>{{atom.Url}}</td>
+      <td>{{atom.BussinessOwnerId}}</td>
+      <td>{{atom.TechOwnerId}}</td>
+      <td>{{atom.ProductId}}</td>
+      <td class="trash-center" (click)="onDelete(atom.Id)"><i class="fas fa-trash fa-lg"></i></td>
+    </tr>
+  </table>
+  </div>

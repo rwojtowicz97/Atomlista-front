@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from "@angular/router";
 
 import { HomepageComponent } from "./homepage";
-import { AtomListComponent } from './atom-list/atom-list.component';
+import { AtomListComponent } from './atom-details/atom-list/atom-list.component';
 import { ProductListComponent } from "./product-list/product-list.component";
 import { TeamListComponent } from "./team-details/team-list/index";
 import { TeamCreateComponent } from "./team-details/team-create/team-create.component";

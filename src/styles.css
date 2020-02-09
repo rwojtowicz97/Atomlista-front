@@ -10,6 +10,10 @@
   background-color: rgb(135, 133, 145);
 }
 
-table {
-  width: 50vw !important;
+ table {
+   justify-content: space-between;
+} 
+
+.trash-center {
+  text-align: right;
 }

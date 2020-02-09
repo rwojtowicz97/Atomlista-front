@@ -13,13 +13,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from "./homepage/homepage.component";
-import { AtomListComponent } from './atom-list/atom-list.component';
+import { AtomListComponent } from './atom-details/atom-list/atom-list.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TeamListComponent } from './team-details/team-list/team-list.component';
 import { WorkerListComponent } from './worker-details/worker-list/worker-list.component';
 import { WorkerCreateComponent } from './worker-details/worker-create/worker-create.component';
 import { WorkerService } from './shared/worker-list/worker-list.service';
 import { TeamCreateComponent } from './team-details/team-create/team-create.component';
+import { AtomCreateComponent } from './atom-details/atom-create/atom-create.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TeamCreateComponent } from './team-details/team-create/team-create.comp
     TeamListComponent,
     WorkerListComponent,
     WorkerCreateComponent,
-    TeamCreateComponent
+    TeamCreateComponent,
+    AtomCreateComponent
   ],
   imports: [
     BrowserModule,

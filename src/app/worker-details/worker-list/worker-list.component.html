@@ -1,7 +1,7 @@
 <div class="search-list">
   <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
   placeholder="Start searching...">
-<table class="table mat-table table-hover">
+<table class="table mat-table table-hover mat-elevation-z8">
   <tr>
       <th>Login</th>
       <th>Name</th>
@@ -14,7 +14,7 @@
   <td>{{worker.Name}}</td>
   <td>{{worker.Surname}}</td>
   <td>{{worker.Email}}</td>
-  <td (click)="onDelete(worker.Id)"><i class="fas fa-trash fa-lg"></i></td>
+  <td class="trash-center" (click)="onDelete(worker.Id)"><i class="fas fa-trash fa-lg"></i></td>
   </tr>
 </table>
 </div>

@@ -1,7 +1,7 @@
 <div class="search-list">
   <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
   placeholder="Start searching...">
-<table class="table mat-table table-hover">
+<table class="table mat-table table-hover mat-elevation-z8">
   <tr>
     <th>Name</th>
     <th>Members</th>
@@ -10,7 +10,7 @@
   <tr class="tr-record" *ngFor="let team of service.list | filter:searchText">
     <td>{{team.TeamName}}</td>
     <td>{{team.PeopleCount}}</td>
-    <td (click)="onDelete(team.Id)"><i class="fas fa-trash fa-lg"></i></td>
+    <td class="trash-center" (click)="onDelete(team.Id)"><i class="fas fa-trash fa-lg"></i></td>
   </tr>
 </table>
 </div>

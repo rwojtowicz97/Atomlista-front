@@ -5,7 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-team-list',
   templateUrl: './team-list.component.html',
-  styleUrls: ['./team-list.component.css']
+  styleUrls: []
 })
 export class TeamListComponent implements OnInit {
 
