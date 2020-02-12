@@ -2,7 +2,7 @@ export class Atom {
   Id: number;
   AtomName: string;
   Url: string;
-  BussinessOwnerId: number;
+  BussinessOwner: number;
+  TechOwner: number;
   ProductId: number;
-  TechOwnerId: number;
 }

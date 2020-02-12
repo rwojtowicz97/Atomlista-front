@@ -13,10 +13,10 @@
     <tr class="tr-record" *ngFor="let atom of service.list | filter:searchText">
       <td>{{atom.AtomName}}</td>
       <td>{{atom.Url}}</td>
-      <td>{{atom.BussinessOwnerId}}</td>
-      <td>{{atom.TechOwnerId}}</td>
+      <td>{{atom.BussinessOwner}}</td>
+      <td>{{atom.TechOwner}}</td>
       <td>{{atom.ProductId}}</td>
-      <td class="trash-center" (click)="onDelete(atom.Id)"><i class="fas fa-trash fa-lg"></i></td>
+      <td class="trash-position" (click)="onDelete(atom.Id)"><i class="fas fa-trash fa-lg"></i></td>
     </tr>
   </table>
   </div>

@@ -10,7 +10,7 @@
   <tr class="tr-record" *ngFor="let team of service.list | filter:searchText">
     <td>{{team.TeamName}}</td>
     <td>{{team.PeopleCount}}</td>
-    <td class="trash-center" (click)="onDelete(team.Id)"><i class="fas fa-trash fa-lg"></i></td>
+    <td class="trash-position" (click)="onDelete(team.Id)"><i class="fas fa-trash fa-lg"></i></td>
   </tr>
 </table>
 </div>
